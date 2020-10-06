@@ -6,6 +6,7 @@
     <title>Room - A Front Mentor Project</title>
     <link rel="stylesheet" href="dist/css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 </head>
 <body>
     <div class="container">
@@ -31,8 +32,11 @@
         </header>
         <main role="main">
             <div class="slider">
-                <img src="/dist/img/mobile-image-hero-1.jpg" alt="">
-                <!--<img src="" alt="">-->
+                <div class="slider__slides">
+                    <div><img src="/dist/img/mobile-image-hero-1.jpg" alt=""></div>
+                    <div><img src="/dist/img/mobile-image-hero-2.jpg" alt=""></div>
+                    <div><img src="/dist/img/mobile-image-hero-3.jpg" alt=""></div>
+                </div>   
                 <div class="slider__controls">
                     <button class="slider__left-arrow">
                         <svg width="14" height="24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M13 0L1 12l12 12" stroke="#FFF" fill="none" fill-rule="evenodd"/></svg>
@@ -64,6 +68,9 @@
             </div>
         </main>
     </div>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="/dist/js/script.js"></script>
 </body>
 </html>
