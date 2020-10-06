@@ -18,28 +18,75 @@ body {
 img {
   width: 100%; }
 
+/* Main */
+main::before {
+  content: "";
+  display: none;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--very-dark-gray);
+  opacity: .5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1; }
+
+main.menu-open::before {
+  display: block; }
+
 /* Header */
 header {
   position: absolute;
-  width: 100%; }
+  width: 100%;
+  z-index: 10;
+  padding: 2.5rem 0; }
   header img {
     width: auto; }
+
+/* Intro */
+.intro,
+.about__intro {
+  padding: 2rem 1.5rem; }
+
+.intro p:not(.intro__shop) {
+  margin-bottom: 3rem; }
+
+.intro__cta svg {
+  margin-left: 1rem; }
 
 body {
   font-family: 'Spartan', sans-serif;
   font-size: 12px; }
 
 h1 {
-  text-align: center; }
+  text-align: center;
+  margin: 0; }
+
+h2 {
+  font-size: 1.6rem; }
+
+h3 {
+  font-size: .8rem;
+  letter-spacing: 5px; }
 
 h3,
 .intro__cta {
-  text-transform: uppercase;
-  letter-spacing: 3px; }
+  text-transform: uppercase; }
+
+p {
+  color: var(--dark-gray);
+  line-height: 1.5; }
 
 a {
   text-decoration: none;
   color: var(--black); }
+
+.intro__cta {
+  letter-spacing: 10px; }
+  .intro__cta:hover {
+    color: var(--dark-gray); }
+    .intro__cta:hover svg path {
+      fill: var(--dark-gray); }
 
 .sr-only {
   position: absolute;
@@ -68,16 +115,14 @@ nav {
   nav button {
     background-color: transparent;
     border: none;
-    padding: 1.5rem 0; }
+    padding: 2.8rem 0; }
     nav button:hover {
       cursor: pointer; }
     nav button .close {
       display: none; }
-    nav button svg {
-      transform: scale(0.5); }
   nav ul {
     margin: 0;
-    padding: 0 1rem;
+    padding: 1.3rem 1rem;
     justify-content: space-around;
     flex: 1;
     display: none; }
@@ -86,10 +131,21 @@ nav {
     nav ul li {
       list-style-type: none;
       padding: 1.5rem 0; }
+    nav ul a {
+      display: block; }
+      nav ul a::after {
+        content: "";
+        display: block;
+        width: 0%;
+        margin: 0 auto;
+        height: 2px;
+        background-color: var(--black);
+        transition: .2s ease; }
+      nav ul a:hover::after {
+        width: 50%; }
 
 .slider {
-  position: relative;
-  z-index: -1; }
+  position: relative; }
   .slider img {
     display: block; }
   .slider .slider__controls {
@@ -103,4 +159,7 @@ nav {
       padding: .8rem 1.5rem;
       position: relative; }
       .slider .slider__controls button:hover {
-        cursor: pointer; }
+        cursor: pointer;
+        background-color: var(--very-dark-gray); }
+    .slider .slider__controls svg {
+      transform: scale(0.7); }
