@@ -73,6 +73,8 @@ nav {
       cursor: pointer; }
     nav button .close {
       display: none; }
+    nav button svg {
+      transform: scale(0.5); }
   nav ul {
     margin: 0;
     padding: 0 1rem;
