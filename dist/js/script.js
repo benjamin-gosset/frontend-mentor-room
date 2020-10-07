@@ -10,8 +10,23 @@ $(document).ready(function(){
         main.classList.toggle('menu-open');
     }
 
-    $('.slider__slides').slick({
-      prevArrow: '.slider__left-arrow',
-      nextArrow: '.slider__right-arrow'
-    });
+    let isVisible = function(el) {
+      return $(el).is(':visible');
+    }
+
+    let isMobile = isVisible('.slider .mobile');
+
+    if ( isMobile) {
+      $('.slider__slides.mobile').slick({
+        prevArrow: '.slider__left-arrow',
+        nextArrow: '.slider__right-arrow'
+      });
+    } else {
+      $('.slider__slides.desktop').slick({
+        prevArrow: '.slider__left-arrow',
+        nextArrow: '.slider__right-arrow'
+      });
+    }
+
+    
   });

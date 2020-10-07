@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Room - A Front Mentor Project</title>
-    <link rel="stylesheet" href="dist/css/main.css">
+    <link rel="stylesheet" href="./dist/css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 </head>
@@ -32,10 +32,15 @@
         </header>
         <main role="main">
             <div class="slider">
-                <div class="slider__slides">
-                    <div><img src="/dist/img/mobile-image-hero-1.jpg" alt=""></div>
-                    <div><img src="/dist/img/mobile-image-hero-2.jpg" alt=""></div>
-                    <div><img src="/dist/img/mobile-image-hero-3.jpg" alt=""></div>
+                <div class="slider__slides mobile">
+                    <div><img src="./dist/img/mobile-image-hero-1.jpg" alt=""></div>
+                    <div><img src="./dist/img/mobile-image-hero-2.jpg" alt=""></div>
+                    <div><img src="./dist/img/mobile-image-hero-3.jpg" alt=""></div>
+                </div>
+                <div class="slider__slides desktop">
+                    <div><img src="./dist/img/desktop-image-hero-1.jpg" alt=""></div>
+                    <div><img src="./dist/img/desktop-image-hero-2.jpg" alt=""></div>
+                    <div><img src="./dist/img/desktop-image-hero-3.jpg" alt=""></div>
                 </div>   
                 <div class="slider__controls">
                     <button class="slider__left-arrow">
@@ -49,28 +54,34 @@
                 </div>
             </div>
             <div class="intro">
-                <h2>Discover innovative ways to decorate</h2>
-                <p>We provide unmatched quality, comfort and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love.</p>
-                <p class="intro__shop">
-                    <a href="#" class="intro__cta">
-                        Shop now
-                        <svg width="40" height="12" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z" fill="#000" fill-rule="nonzero"/></svg>
-                    </a>
-                </p>
+                <div class="intro__inner">
+                    <h2>Discover innovative ways to decorate</h2>
+                    <p>We provide unmatched quality, comfort and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love.</p>
+                    <p class="intro__shop">
+                        <a href="#" class="intro__cta">
+                            Shop now
+                            <svg width="40" height="12" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z" fill="#000" fill-rule="nonzero"/></svg>
+                        </a>
+                    </p>
+                </div>
             </div>
             <div class="about">
-                <img src="/dist/img/image-about-dark.jpg" alt="">
+                <div class="about__img1">
+                    <img src="./dist/img/image-about-dark.jpg" alt="">
+                </div>
                 <div class="about__intro">
                     <h3>About our furniture</h3>
                     <p>Our multifunctional collection blends design and function to suit your individual taste. Make each room unique, or pick a cohesive theme that best express your interests and what inspires you. Find the furniture pieces you need from traditional to contemporary styles or anything in between. Product specialists are available to help you create your dream space.</p>
                 </div>
-                <img src="/dist/img/image-about-light.jpg" alt="">
+                <div class="about__img2">
+                    <img src="./dist/img/image-about-light.jpg" alt="">
+                </div>
             </div>
         </main>
     </div>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="/dist/js/script.js"></script>
+    <script src="./dist/js/script.js"></script>
 </body>
 </html>
