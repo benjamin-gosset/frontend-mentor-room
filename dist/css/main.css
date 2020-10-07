@@ -89,7 +89,7 @@ header {
       overflow: hidden; }
     .about img {
       height: 100%;
-      width: auto; } }
+      width: 100%; } }
 
 @media (min-width: 64rem) {
   .about .about__intro {

@@ -17,14 +17,24 @@ $(document).ready(function(){
     let isMobile = isVisible('.slider .mobile');
 
     if ( isMobile) {
+      $('.intro__inner').slick({
+        arrows: false
+      });
+
       $('.slider__slides.mobile').slick({
         prevArrow: '.slider__left-arrow',
-        nextArrow: '.slider__right-arrow'
+        nextArrow: '.slider__right-arrow',
+        asNavFor: '.intro__inner'
       });
     } else {
+      $('.intro__inner').slick({
+        arrows: false
+      });
+
       $('.slider__slides.desktop').slick({
         prevArrow: '.slider__left-arrow',
-        nextArrow: '.slider__right-arrow'
+        nextArrow: '.slider__right-arrow',
+        asNavFor: '.intro__inner'
       });
     }
 
